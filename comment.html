@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Please Add Your Comment</h2>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae qui magnam quia repellendus unde recusandae eos cum corporis in. Veniam inventore quidem enim explicabo necessitatibus ut! Eaque vel doloribus, impedit placeat aliquam est nulla corrupti ipsa. Ipsum enim dolorum, minus aliquam quas veritatis provident id, voluptatum doloribus nesciunt blanditiis mollitia assumenda temporibus eaque! Tempore dolor aliquam exercitationem omnis eius expedita, earum laboriosam reprehenderit velit at officia sint placeat, ipsa reiciendis. Quisquam impedit ullam quod quaerat facilis voluptatibus, iusto aperiam voluptatem!</p>
+        <p>Laudantium, voluptates? Libero quod itaque distinctio ratione inventore at velit! Eum aperiam soluta obcaecati quidem maxime eligendi ipsam dignissimos nisi rem sint, mollitia quibusdam dolorem pariatur? Harum corrupti explicabo expedita numquam commodi adipisci quam sit tempore est. Harum earum iste aspernatur cumque asperiores numquam nemo recusandae nam culpa reiciendis obcaecati, sed incidunt dolorem est facilis? Itaque illo ex accusantium illum reprehenderit facilis doloremque, sed fugit, nihil, nostrum distinctio culpa sequi animi numquam! Voluptatum sed quaerat magnam voluptatem odio eum provident!</p>
+        <p>Tempore voluptatum similique omnis unde nisi sunt exercitationem dolorum iure nostrum maxime sit, hic laboriosam magni cum expedita adipisci illo, iusto nesciunt a possimus asperiores consectetur facere. Sint ipsam, voluptate atque nam veritatis accusamus, ullam aut animi in reiciendis architecto voluptas quidem magni aliquid numquam cupiditate molestiae laborum exercitationem, assumenda officiis! Veniam accusamus possimus pariatur velit natus quisquam deserunt inventore rerum reprehenderit atque omnis, ipsum totam fuga placeat corporis iure! Consequuntur illo, esse voluptatibus facilis molestias ratione accusantium natus odio?</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post">Post</button>
+    </div>
+
+
+
+
+    <script>
+        // document.getElementById('btn-post').addEventListener('click', function(){
+        //     const commentBox = document.getElementById('new-comment');
+        //     const newComment = commentBox.value;
+            
+        //     const commentContainer = document.getElementById('comment-container');
+        //     const p = document.createElement('p');
+        //     p.innerText = newComment;
+        //     commentContainer.appendChild(p);
+
+        // })
+
+        // document.getElementById('btn-post').addEventListener('click', function(){
+        //     const commentBox = document.getElementById('new-comment');
+        //     const newComment = commentBox.value;
+
+        //     const commentContainer = document.getElementById('comment-container');
+        //     const p = document.createElement('p');
+        //     p.innerText = newComment;
+        //     commentContainer.appendChild(p);
+        // })
+
+        // document.getElementById('btn-post').addEventListener('click', function(){
+        //     const commentBox = document.getElementById('new-comment');
+        //     const newComment = commentBox.value;
+
+        //     const commentContainer = document.getElementById('comment-container');
+        //     const p = document.createElement('p');
+        //     p.innerText = newComment;
+        //     commentContainer.appendChild(p);
+        //     commentBox.value ='';
+        // })
+
+
+
+        document.getElementById('btn-post').addEventListener('click', function(){
+            const commentBox = document.getElementById('new-comment');
+            const newComment = commentBox.value;
+
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+            commentBox.value = '';
+        })
+    </script>
+</body>
+</html>
